@@ -1,0 +1,310 @@
+.h1{
+  color:#fafafa;
+}
+
+.cards {
+  margin: 0 auto;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+  grid-auto-rows: auto;
+  gap: 20px;
+  font-family: sans-serif;
+  padding-top: 30px;
+  position:relative;
+}
+
+.cards * {
+  box-sizing: border-box;
+}
+
+
+.card__content {
+  line-height: 1.5;
+  font-size: 0.9em;
+  padding: 5px;
+  background: #201f1f;
+  color:#fafafa;
+  border-right: 0px solid #333333;
+  border-left: 0px solid #333333;
+  border-bottom: 0px solid #333333;
+}
+
+.card__content > p:first-of-type {
+  margin-top: 0;
+}
+
+.card__content > p:last-of-type {
+  margin-bottom: 0;
+}
+
+
+
+.card__info i {
+  font-size: 0.9em;
+  margin-right: 8px;
+}
+
+
+.card__info {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #555555;
+  background: #eeeeee;
+  font-size: 0.8em;
+  border-bottom: 2px solid #333333;
+  border-right: 2px solid #333333;
+  border-left: 2px solid #333333;
+}
+
+
+
+.tcontainer {
+  width: 100%;
+  overflow: hidden;
+}
+
+.ticker-wrap {
+  width: 100%;
+  padding-left: 100%;
+  background-color: rgb(119, 175, 207);
+}
+
+@keyframes ticker {
+  100% {
+      transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.ticker-move {
+  display: inline-block;
+  white-space: nowrap;
+  padding-right: 100%;
+  animation-timing-function: linear;
+  animation: ticker 40s infinite;
+}
+
+.ticker-move:hover {
+  animation-play-state: paused;
+}
+
+.ticker-item {
+  display: inline-block;
+  padding: 0 40px;
+  font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ul{
+    padding:9px;
+    margin:0 0 0 70px;
+    list-style:none;
+    background-color:rgb(180, 105, 105);
+    text-size-adjust: 20px;
+    
+}
+
+ul li{
+display:inline-block;
+color: mistyrose;
+}
+
+ul li a{
+display: block;
+padding: 15px 27px;
+/* margin:5px 10px;*/
+color:mintcream;
+text-decoration: none;
+text-size-adjust: 14px;
+;
+/*border:2px solid orangered;*/
+}
+
+
+ul li a:hover{
+color:green;
+background-color: silver;
+}
+
+.logo img{
+position: absolute;
+margin-top: 0px;
+margin-left:0px;
+margin-bottom: 2px;
+width:70px;
+height:80px;
+padding:0px;
+}
+
+/* Make the image fully responsive */
+
+
+#demo{
+    position: center;
+    padding:0 150px; 
+    width:60%;
+    height:60%;
+    ;
+}
+
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:700&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+}
+
+
+
+
+.wrapper{
+	background: url(edu.jpg) no-repeat;
+	background-size: cover;
+  height:110vh;
+  
+}
+
+.wrapper .center{
+	
+	left: 50%;
+	top: 55%;
+
+	font-family:'Courier New';
+	user-select: none;
+}
+.center h2{
+	color: white;
+	font-size: 40px;
+	width: 850px;
+	font-weight: bold;
+	text-align: center;
+}
+.center h3{
+	color: white;
+	font-size: 40px;
+	font-weight: bold;
+	margin-top: 10px;
+	width: 885px;
+	text-align: center;
+}
+.center .buttons{
+	margin: 165px 280px;
+
+}
+.buttons button{
+
+	height: 50px;
+	width: 150px;
+	font-size: 18px;
+	font-weight: 600;
+	color: #ffb3b3;
+	background: rgb(54, 5, 5);
+	outline: none;
+	cursor: pointer;
+	border: 1px solid #9c3737;
+	border-radius: 25px;
+	transition: .4s;
+}
+
+.buttons .btn1{
+	margin-left: 250px;
+}
+.buttons .btn2{
+	margin-left: 175px;
+}
+.buttons button:hover{
+	background: #cc0000;
+}
+
+
+
+
+
+footer{
+ 
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #111;
+  height: auto;
+  width: 100vw;
+  font-family: "Open Sans";
+  padding-top: 10px;
+  color: #fff;
+}
+.footer-content{
+  color:white;
+  background:black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-content h3{
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 2rem;
+}
+.footer-content p{
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 18x;
+  font-size: 14px;
+}
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+.socials li{
+  margin: 0 10px;
+}
+.socials a{
+  text-decoration: none;
+  color: #fff;
+}
+.socials a i{
+  font-size: 1.1rem;
+  transition: color .4s ease;
+
+}
+.socials a:hover i{
+  color:green;
+}
+
+
